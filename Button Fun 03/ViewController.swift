@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     var count = 0
+    
+    @IBOutlet weak var text: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,7 +23,7 @@ class ViewController: UIViewController {
         count = count + 1
         print("\(count)button pressed!")
         
-        
+        text.text = "\(count)button pressed!"
         
         
     }
